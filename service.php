@@ -1,4 +1,12 @@
 <?php
+
+require_once 'vendor/autoload.php';
+
+use App\Controllers\HomeController;
+
+$home = new HomeController;
+echo $home->index();
+
 $servername ="localhost";
 $username ="root";
 $password ="";
@@ -61,5 +69,5 @@ else
 
 /* $enviar->close(); */
 $conn->close();
-?>
+
 

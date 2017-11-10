@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require("gulp-sass"),
-    browserSync = require("browser-sync").create();
+    browserSync = require("browser-sync").create(),
+    sourcemaps = require("gulp-sourcemaps");
 
 var reload = browserSync.reload;
 
